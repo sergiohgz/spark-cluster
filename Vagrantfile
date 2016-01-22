@@ -11,7 +11,7 @@ PROVISIONER = "shell"
 # Provisioning scripts
 provision = {
     :privileged => ["cluster_nodes.sh"],
-    :no_privileged => ["ssh_copy_keys.sh"]
+    :no_privileged => ["ssh_copy_keys.sh", "spark_conf.sh"]
 }
 
 # Nodes specification
@@ -30,7 +30,7 @@ nodes = [
             },
         :provision =>
             {
-                :no_privileged => ["spark_master.sh", "spark_conf.sh"],
+                :no_privileged => ["spark_master.sh"],
             }
     },
     {
@@ -38,11 +38,7 @@ nodes = [
         :box => SPARKBOX,
         :ip => "192.168.50.11",
         :memory => 2048,
-        :ncpus => 2,
-        :provision =>
-            {
-                :no_privileged => ["spark_conf.sh"],
-            }
+        :ncpus => 2
     }
 ]
 
