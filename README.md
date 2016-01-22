@@ -5,6 +5,7 @@
 * **Important:** Access to Vagrant Boxes neccesary, request first
 * VirtualBox 5.0
 * Vagrant 1.7.4 or later
+* Install sshpass
 * Free ports 2200, 2201, 2222 (**SSH**), 8080 and 9800 (**HTTP**)
 * Check available CPUs and Memory and modify Vagrantfile if necessary
 
