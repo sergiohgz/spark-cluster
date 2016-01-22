@@ -1,7 +1,7 @@
 #!/bin/bash
 # Configure each node in the spark cluster
 
-cat >$SPARK_HOME/conf/spark-env.sh <<CONF
+cat >/opt/spark/conf/spark-env.sh <<CONF
 #!/usr/bin/env bash
 
 SPARK_MASTER_IP=192.168.50.10

@@ -16,7 +16,7 @@
 1. ```vagrant up --no-provision```
 2. ```vagrant provision```
 * **Rest of executions:** Run ```vagrant up``` normally
-* **Connect:** Run ```vagrant ssh <node_ip>```
+* **Connect:** Run ```vagrant ssh <node_name>```
 * **Stop:** Run ```vagrant halt```
 * **Restart:** Run ```vagrant reload```
 * **Destroy:** Run destroy.sh script or execute these commands:
@@ -24,7 +24,7 @@
 2. ```rm -rf .vagrant```
 * If you desire to recreate cluster machines, read **First run** again
 
-**Note:** If you want to access nodes via node name, add them to your hosts file
+**Note:** Add nodes to your hosts file
 
 ###Spark Cluster###
 See [Running Spark Standalone Cluster](http://spark.apache.org/docs/latest/spark-standalone.html) to see a complete list of options for running cluster
