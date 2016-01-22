@@ -18,7 +18,7 @@ provision = {
 # Remember to put each node at cluster_nodes.sh
 nodes = [
     {
-        :hostname => "us-spark1",
+        :hostname => "spark1",
         :box => SPARKBOX,
         :ip => "192.168.50.10",
         :memory => 2048,
@@ -34,7 +34,7 @@ nodes = [
             }
     },
     {
-        :hostname => "us-spark2",
+        :hostname => "spark2",
         :box => SPARKBOX,
         :ip => "192.168.50.11",
         :memory => 2048,

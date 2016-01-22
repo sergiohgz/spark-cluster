@@ -2,8 +2,8 @@
 # Create the Spark Master node configuration.
 
 cat >$SPARK_HOME/conf/slaves <<WORKERS
-us-spark1
-us-spark2
+spark1
+spark2
 WORKERS
 
 cp $SPARK_HOME/conf/log4j.properties.template $SPARK_HOME/conf/log4j.properties
