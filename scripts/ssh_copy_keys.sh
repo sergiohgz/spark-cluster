@@ -8,8 +8,8 @@ if [ $setted -eq 0 ]; then
 fi
 
 # 2. SSH keygen copy to other hosts
-hosts=$(cat /etc/hosts | grep us | awk '{print $2}' | sort | uniq)
+hosts=$(cat /etc/hosts | grep spark | awk '{print $2}' | sort | uniq)
 for node in $hosts
 do
-	sshpass -p 'vagrant' ssh-copy-id vagrant@$node
+	sshpass -p 'vagrant' ssh-copy-id -oStrictHostKeyChecking=no vagrant@$node
 done

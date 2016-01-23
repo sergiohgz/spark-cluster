@@ -6,7 +6,7 @@
 # delimiter_name -> end of multiline text
 
 my_hostname=$(hostname)
-setted=$(cat /etc/hosts | grep us | grep -v $my_hostname | wc -l)
+setted=$(cat /etc/hosts | grep spark | grep -v $my_hostname | wc -l)
 
 # Checks if other hosts are setted in hosts and put them if not
 if [ ! $setted -gt 0 ]; then
