@@ -31,6 +31,6 @@
 See [Running Spark Standalone Cluster](http://spark.apache.org/docs/latest/spark-standalone.html) to see a complete list of options for running cluster
 
 
-### TODO ###
+## TODO ##
 * Standalone cluster start but don't work with Scala REPL
 * Move examples from Vagrant Box to repository
